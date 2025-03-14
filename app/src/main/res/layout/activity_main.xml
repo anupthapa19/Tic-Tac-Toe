@@ -35,15 +35,24 @@
         android:rowCount="3"
         android:padding="5dp">
 
-        <Button android:id="@+id/btn1" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn2" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn3" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn4" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn5" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn6" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn7" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn8" style="@style/BrownButton"/>
-        <Button android:id="@+id/btn9" style="@style/BrownButton"/>
+        <Button android:id="@+id/btn1" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn2" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn3" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn4" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn5" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn6" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn7" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn8" style="@style/BrownButton"
+            android:onClick="check"/>
+        <Button android:id="@+id/btn9" style="@style/BrownButton"
+            android:onClick="check"/>
     </GridLayout>
 
     <!-- Reset Button -->

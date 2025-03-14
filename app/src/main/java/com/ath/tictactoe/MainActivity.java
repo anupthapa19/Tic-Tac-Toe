@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int[] pos : winPositions) {
                     if (!board[pos[0]].equals("") && board[pos[0]].equals(board[pos[1]]) && board[pos[1]].equals(board[pos[2]])) {
                         Toast.makeText(this, "The Winner is: " + board[pos[0]], Toast.LENGTH_SHORT).show();
-                        newGame();
+                        newGame(view);
                         return;
                     }
                 }
@@ -60,25 +60,17 @@ public class MainActivity extends AppCompatActivity {
                 // Check for Draw
                 if (count == 9) {
                     Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
-                    newGame();
+                    newGame(view);
                 }
             }
         }
     }
 
-    private void newGame() {
+    private void newGame(View view) {
         for (Button btn : buttons) {
             btn.setText("");
         }
         count = 0;
         flag = 0;
     }
-
-//    public void newGame(View view) {
-//        for (Button btn : buttons) {
-//            btn.setText("");
-//        }
-//        count = 0;
-//        flag = 0;
-//    }
 }
